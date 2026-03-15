@@ -4,7 +4,7 @@
 --
 -- Máy chủ: localhost
 -- Thời gian đã tạo: Th6 24, 2025 lúc 01:59 PM
--- Phiên bản máy phục vụ: 10.6.17-MariaDB-cll-lve-log
+-- Phiên bản máy phục vụ: 10.6.xx-MariaDB-cll-lve-log
 -- Phiên bản PHP: 8.2.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -40,8 +40,7 @@ CREATE TABLE `achievements` (
 --
 
 INSERT INTO `achievements` (`id`, `title`, `organization`, `year`, `article_link`) VALUES
-(3, 'Giải Nhất cuộc thi Khoa học - Kỹ thuật và ngày hội STEM tỉnh Đồng Tháp', 'Bộ Giáo dục và Đào tạo tỉnh Đồng Tháp', 2019, 'http://thpttramchimdt.edu.vn/tin-tuc/ket-qua-cuoc-thi-khoa-hoc-ky-thuat-va-ngay-hoi-stem-tinh-don.html');
-
+();
 -- --------------------------------------------------------
 
 --
@@ -62,7 +61,7 @@ CREATE TABLE `certificates` (
 --
 
 INSERT INTO `certificates` (`id`, `title`, `organization`, `issue_date`, `expiry_date`, `credential_id`) VALUES
-(1, 'Kỹ thuật sửa chữa, cài đặt và lắp ráp máy tính', 'UNESCO & Trường Cao đẳng Cộng đồng Đồng Tháp ', '2024-07-21', NULL, '118/2024/LRCĐMT-K24');
+();
 
 -- --------------------------------------------------------
 
@@ -84,8 +83,7 @@ CREATE TABLE `document_links` (
 --
 
 INSERT INTO `document_links` (`id`, `name`, `url`, `icon`, `description`, `category`) VALUES
-(2, 'Drive của hai772038', 'https://drive.google.com/drive/u/0/home', 'fab fa-google-drive', 'lưu bài', 'File'),
-(4, 'Drive của rikakinguyen2004@gmail.com', 'https://drive.google.com/drive/u/1/my-drive', 'fab fa-google-drive', 'lưu bài thôi', 'File');
+();
 
 -- --------------------------------------------------------
 
@@ -107,9 +105,7 @@ CREATE TABLE `education` (
 --
 
 INSERT INTO `education` (`id`, `school`, `degree`, `start_year`, `end_year`, `gpa`) VALUES
-(1, 'Trường Trung Học Phổ Thông Tràm Chim', 'Cấp 3', 2019, 2022, 3.8),
-(3, 'Trường Cao đẳng Cộng đồng Đồng Tháp', 'Kỹ sư Công nghệ thông tin', 2022, 2025, 3.8),
-(10, 'Trường Đại Học Cần Thơ', 'Cử nhân Công nghệ thông tin', 2025, 2027, 0);
+();
 
 -- --------------------------------------------------------
 
@@ -132,8 +128,7 @@ CREATE TABLE `experience` (
 --
 
 INSERT INTO `experience` (`id`, `company`, `position`, `start_date`, `end_date`, `is_current`, `responsibilities`) VALUES
-(1, 'Thực tập sinh tại Trường Cao đẳng Cộng đồng Đồng Tháp', 'Fullstack Developer', '2024-11-21', '2024-12-22', 0, 'Phân tích yêu cầu, thiết kế giao diện (UI/UX) và phát triển toàn bộ hệ thống website thương mại điện tử. Đảm nhiệm front-end (HTML, CSS, Bootstrap, JavaScript), back-end (PHP/Laravel) và cơ sở dữ liệu (MySQL). Triển khai chức năng quản lý sản phẩm, giỏ hàng, thanh toán online và tối ưu website đảm bảo bảo mật và hiệu suất.');
-
+();
 -- --------------------------------------------------------
 
 --
@@ -158,8 +153,7 @@ CREATE TABLE `personal_info` (
 --
 
 INSERT INTO `personal_info` (`id`, `avatar`, `name`, `title`, `email`, `phone`, `location`, `dob`, `github`, `linkedin`) VALUES
-(1, '6761248473962.jpg', 'Nguyễn Văn Ngọc Hãi', 'Kỹ sư công nghệ thông tin', 'hai772038@gmail.com', '0967326154', 'Tam Nông, Đồng Tháp, Việt Nam', '2004-08-10', 'github.com/nvnh2399', 'linkedin.com/in/nvnh2399');
-
+();
 -- --------------------------------------------------------
 
 --
@@ -188,9 +182,7 @@ CREATE TABLE `projects` (
 --
 
 INSERT INTO `projects` (`id`, `name`, `description`, `technologies`, `start_date`, `end_date`, `status`, `github_link`, `demo_link`, `image`, `role`, `team_size`, `challenges`, `results`) VALUES
-(1, 'Xây dựng Website thương mại điện tử về đồ ăn nhanh', 'Đây là dự án cho quá trình thực tập tốt nghiệp của cá nhân tôi ', 'PHP, MySQL, HTML, CSS, JS, Boostrap, jQuery', '2024-11-21', '2024-12-22', 'completed', 'https://github.com/RikakiNguyen', 'https://nvnh.id.vn/bandoannhanh/', '1734426457_pj1.jpg', 'fullstack', 1, 'Kiến thức về JavaScript, Boostrap cũng như jQuery còn hạn chế, phải tự tìm hiểu để trao dồi thêm nên dẫn đến việc dự án bị delay khá nhiều lần', 'Hoàn thành đầy đủ các chức năng mà giảng viên cố vấn đặt ra'),
-(2, 'Thiết kế giao diện Website bán laptop', 'Đây là bài báo cáo kết thúc môn học \"Thiết kế Web\", dự án này nói chung làm cũng khá nhanh chỉ khoảng 1 tuần là hoàn thành kể cả bài báo cáo.', 'HTML, CSS, JS', '2022-07-06', '2022-11-17', 'completed', 'https://github.com/RikakiNguyen', 'https://thi-web.vercel.app/', '1734445160_1706247992333.jpg', 'Front-end', 1, 'Lúc này mới học căn bản về html và css, js là tự tìm hiểu tự học nên bài làm bị lâu', 'Hoàn thành rồi nộp bài với điểm số môn là 9.5, quá tuyệt vời!');
-
+();
 -- --------------------------------------------------------
 
 --
@@ -239,7 +231,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `fullname`, `email`, `rule`, `status`, `created_at`) VALUES
-(1, 'admin', '$2y$10$BvglIm6ugt5awRrQ1RHW8ecHerAAmOWi7WE1Qt0nnwAH3w2I6t/Ei', 'Nguyễn Văn Ngọc Hãi', '', 1, 'active', '2024-12-17 13:00:24');
+();
 
 --
 -- Chỉ mục cho các bảng đã đổ
