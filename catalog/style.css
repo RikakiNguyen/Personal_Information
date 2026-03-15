@@ -1,0 +1,59 @@
+/* style.css */
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+.nav-link {
+    color: #666;
+    cursor: pointer;
+}
+.nav-link.active {
+    color: #0d6efd;
+    background-color: #fff !important;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.profile-header {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.nav-tabs {
+    background-color: #f8f9fa;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+}
+.skill-tag {
+    background-color: #e9ecef;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin: 0.25rem;
+    display: inline-block;
+}
+.contact-info {
+    color: #666;
+}
+.social-link {
+    color: #0d6efd;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+.social-link:hover {
+    color: #0a58ca;
+}
+.tab-pane {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+.tab-pane.show {
+    opacity: 1;
+}
